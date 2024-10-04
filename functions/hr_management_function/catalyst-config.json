@@ -1,0 +1,11 @@
+{
+	"deployment": {
+		"name": "hr_management_function",
+		"stack": "node16",
+		"type": "advancedio",
+		"env_variables": {}
+	},
+	"execution": {
+		"main": "index.js"
+	}
+}

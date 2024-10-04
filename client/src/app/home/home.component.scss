@@ -1,0 +1,57 @@
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$hover-color: darken($primary-color, 10%);
+$button-padding: 10px 20px;
+$border-radius: 5px;
+$text-color: #333;
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #301c69;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+
+    h1 {
+        color: $text-color;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: $text-color;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+}
+
+.button-group {
+    display: flex;
+
+    .btn {
+        padding: $button-padding;
+        margin: 0 10px;
+        border: none;
+        border-radius: $border-radius;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &.candidate {
+            background-color: $primary-color;
+
+            &:hover {
+                background-color: $hover-color;
+            }
+        }
+    }
+}

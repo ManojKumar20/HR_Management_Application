@@ -1,0 +1,32 @@
+[debug] [2024-10-01T11:58:29.121Z] : 
+[debug] [2024-10-01T11:58:29.133Z] : ----------------------------------------------------------------------
+[debug] [2024-10-01T11:58:29.134Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\DELL\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2024-10-01T11:58:29.134Z] : CLI Version:  1.17.6
+[debug] [2024-10-01T11:58:29.135Z] : Platform:     win32
+[debug] [2024-10-01T11:58:29.135Z] : Node Version: v20.17.0
+[debug] [2024-10-01T11:58:29.136Z] : Time:         Tue Oct 01 2024 17:28:29 GMT+0530 (India Standard Time)
+[debug] [2024-10-01T11:58:29.136Z] : ----------------------------------------------------------------------
+[debug] [2024-10-01T11:58:29.137Z] : 
+[debug] [2024-10-01T11:58:31.135Z] : > authorizing via signed-in user option
+[debug] [2024-10-01T11:58:31.136Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL","ZohoCatalyst.pdfshot.execute","ZohoCatalyst.authentication.CREATE"]
+[debug] [2024-10-01T11:58:31.169Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/9618000000008001 
+
+[debug] [2024-10-01T11:58:31.721Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 01 Oct 2024 11:58:32 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=6ad5f9cf-bbe7-48ab-ab79-d0c8087beb89;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=6ad5f9cf-bbe7-48ab-ab79-d0c8087beb89;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-01T11:58:31.746Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/9618000000008001/environment 
+
+[debug] [2024-10-01T11:58:31.833Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 01 Oct 2024 11:58:32 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=7c58023b2365c117e2ff9b6feb09efa2; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=0d6b839a-bfb5-4aae-bfff-4742fc9f4369;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=0d6b839a-bfb5-4aae-bfff-4742fc9f4369;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-01T11:58:32.728Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.in/baas/v1/project/9618000000008001/function 
+Query params: {"type":"basicio,event,cron,applogic,integration,browser_logic"}
+
+[debug] [2024-10-01T11:58:32.852Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Tue, 01 Oct 2024 11:58:33 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"keep-alive","set-cookie":["zalb_3a750b85f1=99131cfabfda186b4fe68a16fb8fedd6; Path=/; Secure; HttpOnly","ZD_CSRF_TOKEN=9d470acf-db34-4644-b571-a4491c757074;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=9d470acf-db34-4644-b571-a4491c757074;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","pragma":"no-cache","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2024-10-01T11:58:32.864Z] : unknown eol undefined hence skipping check
+[info] [2024-10-01T11:58:36.097Z] : 
+[info] [2024-10-01T11:58:36.098Z] :  >>>>>>>>>>>>> AdvancedIO <<<<<<<<<<<< 
+[info] [2024-10-01T11:58:36.100Z] : i hr_management_function: http://localhost:3000/server/hr_management_function/
+[info] [2024-10-01T11:58:36.100Z] : 

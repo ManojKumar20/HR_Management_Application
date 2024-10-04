@@ -1,0 +1,11 @@
+{
+	"name": "hr_management_function",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "b.manojkumar20@gmail.com",
+	"dependencies": {
+		"express": "^4.21.0",
+		"multer": "^1.4.5-lts.1",
+		"zcatalyst-sdk-node": "latest"
+	}
+}

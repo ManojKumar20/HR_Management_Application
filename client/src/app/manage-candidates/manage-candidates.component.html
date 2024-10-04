@@ -1,0 +1,57 @@
+<div class="container-xl">
+    <div class="table-responsive">
+      <div class="table-wrapper">
+        <div class="table-title">
+          <div class="row">
+            <div class="col-sm-12">
+              <h4><b>Manage Employees</b></h4>
+            </div>
+          </div>
+        </div>
+        <table class="table table-striped table-hover table-bordered table-content">
+          <thead>
+            <tr class="center-align">
+              <th>Candidate Id</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>Pan No</th>
+              <th>DOB</th>
+              <th>Address</th>
+              <th>Phone</th>
+              <th>Resume</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr *ngFor="let candidate of candidates | paginate: { itemsPerPage: 10, currentPage: page }" class="center-align">
+            <td>{{candidate.candidateId}}</td>
+            <td>{{candidate.firstName}}</td>
+            <td>{{candidate.lastName}}</td>
+            <td>{{candidate.email }}</td>
+            <td>{{candidate.panNo }}</td>
+            <td>{{candidate.dob}}</td>
+            <td>{{candidate.address}}</td>
+            <td>{{candidate.phone}}</td>
+            <td><button type="button" (click)="downloadResume(candidate.resumeId)" class="btn"><i class='fas fa-download download-icon' style="color: rgb(66, 66, 248);"></i></button></td>
+
+             <td>
+            <ng-container *ngIf="candidate.status === null; else showStatus">
+              <i class="fa fa-check-circle approve-icon" (click)="approveCandidate(candidate)" style="color: green; cursor: pointer;"></i> <!-- Approve Icon -->
+              <i class="fa fa-times-circle reject-icon" (click)="rejectCandidate(candidate)" style="color: red; cursor: pointer;"  ></i> <!-- Reject Icon -->
+            </ng-container>
+          
+            <ng-template #showStatus>
+              {{ candidate.status === true ? 'Approved' : 'Rejected' }}
+            </ng-template>
+             </td>
+            <tr>
+              <td *ngIf="candidates.length == 0" colspan="6">No Employee Found</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <pagination-controls (pageChange)="page = $event"></pagination-controls>
